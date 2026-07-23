@@ -1,0 +1,140 @@
+.nope {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    line-height: 1.666;
+    color: #FAFAFA;
+    background-color: #1A1A1A;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 2.5% 0 0;
+    padding: 0;
+    font-size: 4rem;
+    color: #555555;
+    background-color: #1A1A1A;
+}
+main,
+section {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
+p {
+    margin: 0;
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 0;
+    background-color: #1A1A1A;
+    color: #FAFAFA;
+}
+section {
+    flex-direction: column;
+    padding: 5% 0 10% 0;
+    background-color: #FAFAFA;
+    color: #1A1A1A;
+}
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 1%;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    color: #FAFAFA;
+    background-color: #2563EB;
+}
+button {
+    min-width: 20%;
+    width: fit-content;
+    font-size: 4rem;
+    align-self: center;
+    margin: 5%;
+    padding: 2%;
+    text-align: center;
+    color: #FAFAFA;
+    background: linear-gradient(to bottom, #555555, rgba(0, 0, 0, 0.333));
+    box-shadow: 5px 5px #b5c2df;
+    border: none;
+    border-radius: 20px;
+}   #contact:hover {
+    padding: 2.2%;
+    box-shadow: 6px 6px #1D4ED8;
+    color: #2563EB;
+    cursor: pointer;
+    opacity: 0.666;
+}
+#title {
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+.underline {
+    text-decoration: underline;
+}
+#mug {
+    width: 50%;
+    height: 100%;
+    align-self: center;
+}
+#headline {
+    margin: 2%;
+}
+.tagline {
+    margin: 2.5% 10% 2.5% 10%;
+}
+.social_icon {
+    min-width: 2rem;
+    width: 2rem;
+    height: 3%;
+    justify-self: center;
+    align-self: center;
+}   .social_icon:hover {
+    width: 2.2rem;
+    cursor: pointer;
+    opacity: 0.666;
+}
+@media (max-aspect-ratio: 3/4) {
+    main {
+        flex-direction: column;
+    }
+    #mug {
+        width: 100%;
+    }
+    #headline {
+        font-size: smaller;
+        margin: 5%;
+    }
+    section {
+        font-size: 2.5rem;
+        padding: 10% 0 20% 0;
+    }
+    button {
+        min-width: 50%;
+        width: fit-content;
+        font-size: 3rem;
+    }
+}
