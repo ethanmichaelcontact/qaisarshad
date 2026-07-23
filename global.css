@@ -118,6 +118,9 @@ button {
     opacity: 0.666;
 }
 @media (max-aspect-ratio: 3/4) {
+    header {
+        font-size: 2rem;
+    }
     main {
         flex-direction: column;
     }
